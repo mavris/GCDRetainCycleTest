@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		27330CD01D4A8058007077B9 /* GCDVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 27330CCF1D4A8058007077B9 /* GCDVC2.m */; };
+		27330CD21D4BE708007077B9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 27330CD11D4BE708007077B9 /* README.md */; };
 		826857421D47A90F0008122D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 826857411D47A90F0008122D /* main.m */; };
 		826857451D47A90F0008122D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 826857441D47A90F0008122D /* AppDelegate.m */; };
 		826857481D47A90F0008122D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826857471D47A90F0008122D /* ViewController.m */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		27330CCE1D4A8058007077B9 /* GCDVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDVC2.h; sourceTree = "<group>"; };
 		27330CCF1D4A8058007077B9 /* GCDVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDVC2.m; sourceTree = "<group>"; };
+		27330CD11D4BE708007077B9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8268573D1D47A90F0008122D /* GCDRetainCycleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDRetainCycleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		826857411D47A90F0008122D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		826857431D47A90F0008122D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				826857581D47AAA30008122D /* GCDVC.m */,
 				27330CCE1D4A8058007077B9 /* GCDVC2.h */,
 				27330CCF1D4A8058007077B9 /* GCDVC2.m */,
+				27330CD11D4BE708007077B9 /* README.md */,
 				826857491D47A90F0008122D /* Main.storyboard */,
 				8268574C1D47A90F0008122D /* Assets.xcassets */,
 				8268574E1D47A90F0008122D /* LaunchScreen.storyboard */,
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27330CD21D4BE708007077B9 /* README.md in Sources */,
 				826857481D47A90F0008122D /* ViewController.m in Sources */,
 				826857591D47AAA30008122D /* GCDVC.m in Sources */,
 				826857451D47A90F0008122D /* AppDelegate.m in Sources */,
