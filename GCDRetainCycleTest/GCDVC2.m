@@ -24,21 +24,25 @@ typedef void(^CustomBlock)(void);
     // Do any additional setup after loading the view.
     self.proArray = [[NSMutableArray alloc]init];
     
+    GCDVC2* __weak weakSelf = self;
+
     
     self.postGCDBlock = ^{
-        [self.proArray removeObject:@"3"];
-        [self.activityIndicator stopAnimating];
+        GCDVC2* __strong strongSelf = weakSelf;
+        NSLog(@"%@",strongSelf.proArray);
+        [strongSelf.proArray removeObject:@"3"];
+        [strongSelf.activityIndicator stopAnimating];
     };
     
     self.addObjectsBlock = ^{
-        
-        [self.proArray addObject:@"2"];
+        GCDVC2* __strong strongSelf = weakSelf;
+
+        [strongSelf.proArray addObject:@"2"];
         
         [NSThread sleepForTimeInterval:10];
         
-        NSLog(@"%@",self.proArray);
         
-        dispatch_async(dispatch_get_main_queue(),self.postGCDBlock);
+        dispatch_async(dispatch_get_main_queue(),strongSelf.postGCDBlock);
     };
     
     
