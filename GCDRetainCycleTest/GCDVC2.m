@@ -26,26 +26,24 @@ typedef void(^CustomBlock)(void);
     
     GCDVC2* __weak weakSelf = self;
 
-    
     self.postGCDBlock = ^{
+
         GCDVC2* __strong strongSelf = weakSelf;
-        NSLog(@"%@",strongSelf.proArray);
+
         [strongSelf.proArray removeObject:@"3"];
+        NSLog(@"%@",strongSelf.proArray);
         [strongSelf.activityIndicator stopAnimating];
     };
     
     self.addObjectsBlock = ^{
+        
         GCDVC2* __strong strongSelf = weakSelf;
-
+        
         [strongSelf.proArray addObject:@"2"];
-        
         [NSThread sleepForTimeInterval:10];
-        
         
         dispatch_async(dispatch_get_main_queue(),strongSelf.postGCDBlock);
     };
-    
-    
 }
 
 - (IBAction)startGCDRetainCycle:(id)sender {
